@@ -1,0 +1,400 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+
+<title>AP Gov Cases & Docs</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&family=Source+Code+Pro:wght@400;500&display=swap">
+<style>
+:root {
+  --bg: #FFFFFF; --bg2: #EBE8E0; --bg3: #DDD9CE;
+  --fg: #14120C; --fg2: #60594E; --rule: #C8C2B0;
+  --navy: #1C2E4A; --red: #7A1818; --gold: #8A6010;
+  --green: #1A4A28; --blue: #164478; --teal: #0E4A4A;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0C0B08; --bg2: #141210; --bg3: #1C1A14;
+    --fg: #EAE6DC; --fg2: #9A9488; --rule: #342E22;
+    --navy: #7AAACE; --red: #C05050; --gold: #D4A040;
+    --green: #60A870; --blue: #6090C8; --teal: #40A8A8;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0C0B08; --bg2: #141210; --bg3: #1C1A14;
+  --fg: #EAE6DC; --fg2: #9A9488; --rule: #342E22;
+  --navy: #7AAACE; --red: #C05050; --gold: #D4A040;
+  --green: #60A870; --blue: #6090C8; --teal: #40A8A8;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+  font-size: 13.5px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.page { max-width: 960px; margin: 0 auto; padding-block: 44px 80px; }
+
+/* COVER */
+.cover {
+  border: 2px solid var(--fg); border-top: 6px solid var(--navy);
+  padding: 20px 24px 18px; margin-bottom: 36px;
+  display: flex; gap: 16px; align-items: center; flex-wrap: wrap;
+}
+.cover h1 { font-family: 'Libre Baskerville', serif; font-size: clamp(18px,3vw,30px); font-weight: 700; line-height: 1.1; text-wrap: balance; flex: 1; min-width: 200px; }
+.cover-sub { font-family: 'Source Code Pro', monospace; font-size: 10px; color: var(--fg2); margin-top: 8px; letter-spacing: .06em; }
+.cover-badge { background: var(--navy); color: #EDE9DC; font-family: 'Source Code Pro', monospace; font-size: 8.5px; letter-spacing: .12em; text-transform: uppercase; padding: 10px 14px; text-align: center; line-height: 2; flex-shrink: 0; }
+
+/* SECTION HEADER */
+.sec { margin: 36px 0 14px; border-bottom: 2px double var(--rule); padding-bottom: 8px; display: flex; align-items: baseline; gap: 12px; }
+.sec-n { font-family: 'Source Code Pro', monospace; font-size: 10px; color: var(--fg2); letter-spacing: .08em; }
+.sec h2 { font-family: 'Libre Baskerville', serif; font-size: clamp(14px,2.4vw,18px); font-weight: 700; }
+
+/* SCOTUS TABLE */
+.tbl-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 10px; }
+table { border-collapse: collapse; min-width: 680px; width: 100%; font-size: 12px; }
+thead { background: var(--navy); color: #EDE9DC; }
+thead th { padding: 9px 11px; font-family: 'Source Code Pro', monospace; font-size: 9px; text-transform: uppercase; letter-spacing: .1em; font-weight: 500; text-align: left; }
+tbody tr { border-bottom: 1px solid var(--rule); }
+tbody tr:nth-child(even) { background: var(--bg2); }
+td { padding: 9px 11px; vertical-align: top; line-height: 1.45; }
+td:first-child { font-family: 'Libre Baskerville', serif; font-style: italic; font-size: 11.5px; white-space: nowrap; }
+td.yr { font-family: 'Source Code Pro', monospace; font-size: 10px; color: var(--fg2); white-space: nowrap; }
+td.unit-tag { white-space: nowrap; }
+.tag { display: inline-block; font-family: 'Source Code Pro', monospace; font-size: 8.5px; padding: 2px 6px; border-radius: 2px; text-transform: uppercase; letter-spacing: .07em; margin-bottom: 2px; }
+.t-navy { background: var(--navy); color: #EDE9DC; }
+.t-red  { background: var(--red);  color: #EDE9DC; }
+.t-green{ background: var(--green);color: #EDE9DC; }
+.t-blue { background: var(--blue); color: #EDE9DC; }
+.t-gold { background: var(--gold); color: #EDE9DC; }
+.t-teal { background: var(--teal); color: #EDE9DC; }
+.ruling-exp { color: var(--green); font-weight: 600; }
+.ruling-lim { color: var(--red); font-weight: 600; }
+.ruling-est { color: var(--navy); font-weight: 600; }
+
+/* FOUNDATIONAL DOCS COMPARISON */
+.docs-table { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 10px; }
+.docs-table table { min-width: 760px; }
+.docs-table thead { background: var(--red); }
+
+/* AMENDMENT TIMELINE */
+.amend-track { position: relative; padding-left: 28px; margin-bottom: 8px; }
+.amend-dot { position: absolute; left: 0; top: 4px; width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; }
+.amend-dot.d-navy { background: var(--navy); }
+.amend-dot.d-red  { background: var(--red); }
+.amend-dot.d-green{ background: var(--green); }
+.amend-dot.d-blue { background: var(--blue); }
+.amend-dot.d-teal { background: var(--teal); }
+.amend-body { font-size: 12px; }
+.amend-title { font-family: 'Source Code Pro', monospace; font-size: 10px; font-weight: 500; color: var(--fg); }
+.amend-desc { color: var(--fg2); }
+.amend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; }
+@media (max-width: 520px) { .amend-grid { grid-template-columns: 1fr; } }
+
+/* QUICK TEST */
+.qt-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-top: 4px; }
+.qt-card { border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; }
+.qt-q { background: var(--bg2); padding: 10px 14px; font-size: 12.5px; line-height: 1.45; border-bottom: 1px solid var(--rule); }
+.qt-q strong { font-family: 'Source Code Pro', monospace; font-size: 9px; text-transform: uppercase; letter-spacing: .08em; display: block; color: var(--fg2); margin-bottom: 4px; }
+details.qt-ans { padding: 8px 14px; background: var(--bg); font-size: 11.5px; color: var(--fg2); }
+summary.qt-toggle { font-family: 'Source Code Pro', monospace; font-size: 9px; text-transform: uppercase; letter-spacing: .1em; cursor: pointer; color: var(--navy); padding: 6px 0; }
+details[open] .qt-toggle { color: var(--gold); }
+
+.theme-btn { position: sticky; top: max(14px, env(safe-area-inset-top,0px)); float: right; background: var(--bg2); border: 1px solid var(--rule); color: var(--fg); width: 32px; height: 32px; border-radius: 50%; cursor: pointer; font-size: 14px; display: flex; align-items: center; justify-content: center; z-index: 100; }
+
+.footer { border-top: 2px double var(--rule); padding-top: 14px; margin-top: 50px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+.footer-left { font-family: 'Libre Baskerville'; font-style: italic; font-size: 12px; color: var(--fg2); }
+.footer-right { font-family: 'Source Code Pro', monospace; font-size: 9px; color: var(--fg2); letter-spacing: .12em; text-align: right; }
+</style>
+
+<button class="theme-btn" id="themeBtn">☀</button>
+
+<div class="page">
+  <div class="cover">
+    <div>
+      <h1>AP Gov: Required SCOTUS Cases &amp; Foundational Documents</h1>
+      <p class="cover-sub">ENRICHUTH · RESOURCE 2 OF 2 · 15 CASES + 8 DOCUMENTS + KEY AMENDMENTS</p>
+    </div>
+    <div class="cover-badge">AP<br>GOV<br>REF</div>
+  </div>
+
+  <!-- SCOTUS CASES -->
+  <div class="sec"><div class="sec-n">01</div><h2>15 Required SCOTUS Cases</h2></div>
+  <p style="font-size:12px;color:var(--fg2);margin-bottom:10px;">★ = most frequently tested. Know the issue, ruling, and significance for each.</p>
+  <div class="tbl-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Case</th>
+          <th>Year</th>
+          <th>Issue</th>
+          <th>Ruling &amp; Significance</th>
+          <th>Unit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Marbury v. Madison ★</td>
+          <td class="yr">1803</td>
+          <td>Could Marbury force the Court to deliver his commission?</td>
+          <td><span class="ruling-est">Established</span> judicial review — Supreme Court can strike down laws that violate the Constitution. The Constitution is the supreme law; Congress cannot expand Court's original jurisdiction.</td>
+          <td class="unit-tag"><span class="tag t-red">Unit 2</span></td>
+        </tr>
+        <tr>
+          <td>McCulloch v. Maryland</td>
+          <td class="yr">1819</td>
+          <td>Could Maryland tax the national bank? Did Congress have power to create it?</td>
+          <td><span class="ruling-exp">Expanded</span> federal power. "Necessary and proper" means useful, not absolutely necessary. Federal law is supreme; states cannot tax federal institutions. Broad interpretation of implied powers.</td>
+          <td class="unit-tag"><span class="tag t-navy">Unit 1</span></td>
+        </tr>
+        <tr>
+          <td>United States v. Lopez ★</td>
+          <td class="yr">1995</td>
+          <td>Did Congress overreach the Commerce Clause with Gun-Free School Zones Act?</td>
+          <td><span class="ruling-lim">Limited</span> federal power. Gun possession in school zones ≠ economic activity; Commerce Clause has limits. Landmark federalism ruling restoring state power.</td>
+          <td class="unit-tag"><span class="tag t-navy">Unit 1</span><br><span class="tag t-red">Unit 2</span></td>
+        </tr>
+        <tr>
+          <td>Baker v. Carr ★</td>
+          <td class="yr">1962</td>
+          <td>Could federal courts hear redistricting cases (a political question)?</td>
+          <td><span class="ruling-exp">Expanded</span> court power. Legislative apportionment is justiciable — courts CAN rule on redistricting. Led to "one person, one vote" standard (Reynolds v. Sims 1964).</td>
+          <td class="unit-tag"><span class="tag t-red">Unit 2</span></td>
+        </tr>
+        <tr>
+          <td>Shaw v. Reno ★</td>
+          <td class="yr">1993</td>
+          <td>Was NC's majority-minority congressional district an unconstitutional racial gerrymander?</td>
+          <td><span class="ruling-lim">Limited</span> racial gerrymandering. Districts drawn primarily on race must pass strict scrutiny under Equal Protection. Race alone cannot be the dominant factor in drawing districts.</td>
+          <td class="unit-tag"><span class="tag t-red">Unit 2</span></td>
+        </tr>
+        <tr>
+          <td>Engel v. Vitale ★</td>
+          <td class="yr">1962</td>
+          <td>Was state-sponsored school prayer a violation of the Establishment Clause?</td>
+          <td><span class="ruling-lim">Struck down</span> school prayer. Government cannot compose or lead official prayers in public schools. Applies Establishment Clause via 14th Amendment incorporation.</td>
+          <td class="unit-tag"><span class="tag t-green">Unit 3</span></td>
+        </tr>
+        <tr>
+          <td>Wisconsin v. Yoder ★</td>
+          <td class="yr">1972</td>
+          <td>Could the state require Amish children to attend school past 8th grade?</td>
+          <td><span class="ruling-exp">Protected</span> Free Exercise. Compulsory education law burdened the Amish religion without sufficient state interest. Religious freedom can override state law; balancing test: gov interest vs. religious burden.</td>
+          <td class="unit-tag"><span class="tag t-green">Unit 3</span></td>
+        </tr>
+        <tr>
+          <td>Tinker v. Des Moines ★</td>
+          <td class="yr">1969</td>
+          <td>Did students have 1st Amendment rights to wear anti-war armbands in school?</td>
+          <td><span class="ruling-exp">Protected</span> student speech. "Students do not shed their constitutional rights at the schoolhouse gate." Speech only restricted if it causes substantial disruption. Symbolic speech protected.</td>
+          <td class="unit-tag"><span class="tag t-green">Unit 3</span></td>
+        </tr>
+        <tr>
+          <td>Schenck v. United States</td>
+          <td class="yr">1919</td>
+          <td>Could the gov't prosecute anti-draft pamphlets under the Espionage Act?</td>
+          <td><span class="ruling-lim">Limited</span> speech in wartime. Established "clear and present danger" test — speech can be restricted if it poses an immediate threat. Later narrowed by Brandenburg v. Ohio (1969).</td>
+          <td class="unit-tag"><span class="tag t-green">Unit 3</span></td>
+        </tr>
+        <tr>
+          <td>New York Times v. United States</td>
+          <td class="yr">1971</td>
+          <td>Could the gov't use prior restraint to stop publication of the Pentagon Papers?</td>
+          <td><span class="ruling-exp">Protected</span> press freedom. Government has "heavy burden" to justify prior restraint; it did not meet that burden. Press can publish classified material; prior restraint is presumptively unconstitutional.</td>
+          <td class="unit-tag"><span class="tag t-green">Unit 3</span></td>
+        </tr>
+        <tr>
+          <td>Gideon v. Wainwright ★</td>
+          <td class="yr">1963</td>
+          <td>Was Gideon denied his 6th Amendment right to counsel in a state felony trial?</td>
+          <td><span class="ruling-exp">Incorporated</span> right to counsel. The 6th Amendment right to an attorney applies to state courts via the 14th Amendment. States must provide lawyers for defendants who cannot afford one.</td>
+          <td class="unit-tag"><span class="tag t-green">Unit 3</span></td>
+        </tr>
+        <tr>
+          <td>Roe v. Wade</td>
+          <td class="yr">1973</td>
+          <td>Did the Constitution protect a woman's right to an abortion?</td>
+          <td>Protected abortion rights under the 14th Amendment right to privacy and liberty; established trimester framework. Overturned by Dobbs v. Jackson (2022) — privacy right to abortion no longer constitutionally protected.</td>
+          <td class="unit-tag"><span class="tag t-green">Unit 3</span></td>
+        </tr>
+        <tr>
+          <td>McDonald v. Chicago ★</td>
+          <td class="yr">2010</td>
+          <td>Did Chicago's handgun ban violate the 2nd Amendment as applied to states?</td>
+          <td><span class="ruling-exp">Incorporated</span> 2nd Amendment. The right to keep and bear arms applies to state/local governments via the 14th Amendment's Due Process Clause. Key selective incorporation case.</td>
+          <td class="unit-tag"><span class="tag t-green">Unit 3</span></td>
+        </tr>
+        <tr>
+          <td>Brown v. Board of Education ★</td>
+          <td class="yr">1954</td>
+          <td>Did racially segregated public schools violate the Equal Protection Clause?</td>
+          <td><span class="ruling-lim">Struck down</span> "separate but equal." Segregated schools are inherently unequal — violates 14th Amendment. Overturns Plessy v. Ferguson (1896). Catalyst for Civil Rights Movement.</td>
+          <td class="unit-tag"><span class="tag t-green">Unit 3</span></td>
+        </tr>
+        <tr>
+          <td>Citizens United v. FEC ★</td>
+          <td class="yr">2010</td>
+          <td>Could the gov't restrict a corporation's independent campaign expenditures?</td>
+          <td><span class="ruling-exp">Protected</span> corporate political spending. Corporations and unions have 1st Amendment rights; spending money = political speech. Enabled Super PACs and unlimited independent expenditures.</td>
+          <td class="unit-tag"><span class="tag t-gold">Unit 5</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- FOUNDATIONAL DOCS -->
+  <div class="sec"><div class="sec-n">02</div><h2>8 Required Foundational Documents</h2></div>
+  <div class="docs-table">
+    <table>
+      <thead>
+        <tr>
+          <th>Document</th>
+          <th>Author / Year</th>
+          <th>Core Argument</th>
+          <th>Key Quote or Term</th>
+          <th>AP Connection</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-style:italic">Federalist No. 10</td>
+          <td class="yr">Madison, 1787</td>
+          <td>Factions are dangerous but inevitable. Large republic + representative gov prevents any faction from dominating and threatening liberty.</td>
+          <td>"Liberty is to faction what air is to fire… it could not be a less folly to abolish liberty… than it would be to wish the annihilation of air."</td>
+          <td>Unit 1 — argues FOR Constitution; answers Anti-Federalist fear of factions; contrasts with Brutus No. 1</td>
+        </tr>
+        <tr>
+          <td style="font-style:italic">Federalist No. 51</td>
+          <td class="yr">Madison, 1788</td>
+          <td>Separation of powers + checks and balances prevent tyranny. Federal structure gives citizens "double security." Each branch must resist the others.</td>
+          <td>"If men were angels, no government would be necessary. If angels were to govern men, neither external nor internal controls on government would be necessary."</td>
+          <td>Unit 1/2 — justifies bicameralism and separation of powers; "ambition must counteract ambition" = checks and balances</td>
+        </tr>
+        <tr>
+          <td style="font-style:italic">Federalist No. 70</td>
+          <td class="yr">Hamilton, 1788</td>
+          <td>A single, energetic executive is essential for good government. Unity enables decision, secrecy, dispatch, and accountability — councils are weak and blame-diffusing.</td>
+          <td>"Energy in the executive is a leading character in the definition of good government."</td>
+          <td>Unit 2 — justifies unitary executive; answers calls for executive council; informs modern debates on presidential power</td>
+        </tr>
+        <tr>
+          <td style="font-style:italic">Federalist No. 78</td>
+          <td class="yr">Hamilton, 1788</td>
+          <td>Judiciary is "least dangerous branch" — no sword or purse. Life tenure protects judges from political pressure. Defends judicial review as natural, not tyrannical.</td>
+          <td>"The courts were designed to be an intermediate body between the people and the legislature, in order… to keep the latter within the limits assigned to their authority."</td>
+          <td>Unit 2 — justifies judicial independence and life tenure; pre-dates Marbury v. Madison; basis for judicial review</td>
+        </tr>
+        <tr>
+          <td style="font-style:italic">Brutus No. 1</td>
+          <td class="yr">Yates(?), 1787</td>
+          <td>Anti-Federalist warning: the new Constitution gives federal government too much power (taxation, armies), will abolish state governments, and is incompatible with a large republic — citizens will have no real representation.</td>
+          <td>"In a republic, the manners, sentiments, and interests of the people should be similar. If this be not the case, there will be a constant clashing of opinions."</td>
+          <td>Unit 1 — primary counterargument to Federalist 10; feared standing armies and national taxation; drove demand for Bill of Rights</td>
+        </tr>
+        <tr>
+          <td style="font-style:italic">Declaration of Independence</td>
+          <td class="yr">Jefferson, 1776</td>
+          <td>Government derives power from consent of the governed; exists to protect natural rights. When it violates those rights, the people may alter or abolish it. List of specific grievances against King George.</td>
+          <td>"We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness."</td>
+          <td>Unit 1 — foundational statement of popular sovereignty and natural rights; draws from Locke's social contract theory</td>
+        </tr>
+        <tr>
+          <td style="font-style:italic">Articles of Confederation</td>
+          <td class="yr">1777 / ratified 1781</td>
+          <td>First U.S. gov't gave most power to states. No executive branch, no national judiciary. Congress could not tax directly, raise an army, or regulate commerce. Amendments required unanimity.</td>
+          <td>Key weakness: "Each state retains its sovereignty, freedom, and independence, and every power, jurisdiction, and right, which is not… expressly delegated to the United States."</td>
+          <td>Unit 1 — failure of AOC (Shays' Rebellion, no money, no army) is the reason the Constitution was written; illustrates dangers of pure state sovereignty</td>
+        </tr>
+        <tr>
+          <td style="font-style:italic">Letter from Birmingham Jail</td>
+          <td class="yr">MLK Jr., 1963</td>
+          <td>Civil disobedience is morally justified against unjust laws. Distinguish just vs. unjust law (degrades human personality; not applied equally). Criticizes "white moderate" moderatism and church inaction. Urgency of "now."</td>
+          <td>"One has not only a legal but a moral responsibility to obey just laws. Conversely, one has a moral responsibility to disobey unjust laws."</td>
+          <td>Unit 3 — primary source on civil rights movement; applies Aquinas/Augustine to constitutional law; connects to 14th Amendment equal protection</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY AMENDMENTS -->
+  <div class="sec"><div class="sec-n">03</div><h2>Key Constitutional Amendments — AP Quick Reference</h2></div>
+  <div class="amend-grid">
+    <div>
+      <p style="font-family:'Source Code Pro',monospace;font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:var(--navy);margin-bottom:8px;">Bill of Rights (1791)</p>
+      <div class="amend-track"><div class="amend-dot d-navy"></div><div class="amend-body"><span class="amend-title">1st</span> <span class="amend-desc">Speech, religion, press, assembly, petition (Engel, Tinker, Schenck, NYT v. US, Yoder)</span></div></div>
+      <div class="amend-track"><div class="amend-dot d-navy"></div><div class="amend-body"><span class="amend-title">2nd</span> <span class="amend-desc">Right to bear arms — incorporated via 14th (McDonald v. Chicago)</span></div></div>
+      <div class="amend-track"><div class="amend-dot d-navy"></div><div class="amend-body"><span class="amend-title">4th</span> <span class="amend-desc">No unreasonable search/seizure; exclusionary rule</span></div></div>
+      <div class="amend-track"><div class="amend-dot d-navy"></div><div class="amend-body"><span class="amend-title">5th</span> <span class="amend-desc">Self-incrimination, double jeopardy, due process, takings clause</span></div></div>
+      <div class="amend-track"><div class="amend-dot d-navy"></div><div class="amend-body"><span class="amend-title">6th</span> <span class="amend-desc">Right to counsel, speedy trial, jury — incorporated (Gideon v. Wainwright)</span></div></div>
+      <div class="amend-track"><div class="amend-dot d-navy"></div><div class="amend-body"><span class="amend-title">10th</span> <span class="amend-desc">Reserved powers — powers not given to federal gov go to states/people (US v. Lopez)</span></div></div>
+    </div>
+    <div>
+      <p style="font-family:'Source Code Pro',monospace;font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:var(--red);margin-bottom:8px;">Reconstruction Era (1865–1870)</p>
+      <div class="amend-track"><div class="amend-dot d-red"></div><div class="amend-body"><span class="amend-title">13th (1865)</span> <span class="amend-desc">Abolished slavery and involuntary servitude</span></div></div>
+      <div class="amend-track"><div class="amend-dot d-red"></div><div class="amend-body"><span class="amend-title">14th (1868)</span> <span class="amend-desc">Citizenship, equal protection, due process — KEY: selective incorporation applies Bill of Rights to states (Brown, Gideon, McDonald…)</span></div></div>
+      <div class="amend-track"><div class="amend-dot d-red"></div><div class="amend-body"><span class="amend-title">15th (1870)</span> <span class="amend-desc">Voting rights cannot be denied based on race (still required literacy tests → Voting Rights Act 1965 to enforce)</span></div></div>
+      <p style="font-family:'Source Code Pro',monospace;font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:var(--green);margin-bottom:8px;margin-top:14px;">Civil Rights &amp; Modern (20th Century)</p>
+      <div class="amend-track"><div class="amend-dot d-green"></div><div class="amend-body"><span class="amend-title">17th (1913)</span> <span class="amend-desc">Direct election of senators (shifted power from state legislatures to voters)</span></div></div>
+      <div class="amend-track"><div class="amend-dot d-green"></div><div class="amend-body"><span class="amend-title">19th (1920)</span> <span class="amend-desc">Women's right to vote</span></div></div>
+      <div class="amend-track"><div class="amend-dot d-green"></div><div class="amend-body"><span class="amend-title">22nd (1951)</span> <span class="amend-desc">Two-term limit on presidency (after FDR's 4 terms)</span></div></div>
+      <div class="amend-track"><div class="amend-dot d-green"></div><div class="amend-body"><span class="amend-title">24th (1964)</span> <span class="amend-desc">Abolished poll taxes in federal elections</span></div></div>
+      <div class="amend-track"><div class="amend-dot d-green"></div><div class="amend-body"><span class="amend-title">26th (1971)</span> <span class="amend-desc">Lowered voting age to 18 (Vietnam War protests)</span></div></div>
+    </div>
+  </div>
+
+  <!-- QUICK TEST -->
+  <div class="sec"><div class="sec-n">04</div><h2>Quick Test — Required Cases &amp; Documents</h2></div>
+  <div class="qt-grid">
+    <div class="qt-card">
+      <div class="qt-q"><strong>Q1</strong>Which case established judicial review — and where does that power appear in the Constitution?</div>
+      <details class="qt-ans"><summary class="qt-toggle">Reveal Answer</summary>Marbury v. Madison (1803). Judicial review does NOT appear in the Constitution — Chief Justice Marshall derived it from the Supremacy Clause and Article III. This is a key exam trap: "Where is judicial review in the Constitution?" Answer: it's not written there.</details>
+    </div>
+    <div class="qt-card">
+      <div class="qt-q"><strong>Q2</strong>How do Federalist No. 10 and Brutus No. 1 disagree about the large republic?</div>
+      <details class="qt-ans"><summary class="qt-toggle">Reveal Answer</summary>Madison (Fed. 10) argues a large republic is BETTER at controlling factions — so many groups exist that no single one can dominate. Brutus argues a large republic is DANGEROUS — citizens lose connection to government, and the national gov will absorb the states. Both sides agree factions are dangerous; they disagree about the solution.</details>
+    </div>
+    <div class="qt-card">
+      <div class="qt-q"><strong>Q3</strong>What is selective incorporation and which amendment makes it possible?</div>
+      <details class="qt-ans"><summary class="qt-toggle">Reveal Answer</summary>Selective incorporation = the process by which SCOTUS applies specific Bill of Rights protections to state governments on a case-by-case basis. Made possible by the 14th Amendment's Due Process Clause ("nor shall any State deprive any person of life, liberty, or property without due process of law"). Key cases: Gideon (6th), McDonald (2nd).</details>
+    </div>
+    <div class="qt-card">
+      <div class="qt-q"><strong>Q4</strong>What did Citizens United do to campaign finance, and why is it controversial?</div>
+      <details class="qt-ans"><summary class="qt-toggle">Reveal Answer</summary>Citizens United (2010) held that corporations and unions have 1st Amendment free speech rights, and that spending money on political campaigns is protected speech. Therefore, the government cannot limit independent expenditures. Created Super PACs. Controversial because: critics argue it equates money with speech and allows corporations to dominate elections; supporters argue restricting spending violates 1st Amendment.</details>
+    </div>
+    <div class="qt-card">
+      <div class="qt-q"><strong>Q5</strong>What is the key difference between Tinker v. Des Moines and Schenck v. United States?</div>
+      <details class="qt-ans"><summary class="qt-toggle">Reveal Answer</summary>Tinker (1969): protected student symbolic speech (armbands) — speech can only be restricted if it causes "substantial disruption." Schenck (1919): allowed restriction of wartime anti-draft speech under "clear and present danger" test. Key difference: Tinker protects speech unless disruption is proven; Schenck allows restriction when speech poses imminent danger. Schenck was later narrowed by Brandenburg v. Ohio (1969).</details>
+    </div>
+    <div class="qt-card">
+      <div class="qt-q"><strong>Q6</strong>Why did MLK argue in the Letter from Birmingham Jail that civil disobedience was justified?</div>
+      <details class="qt-ans"><summary class="qt-toggle">Reveal Answer</summary>King drew on Aquinas and Augustine: an unjust law is "a code that a numerical or power majority group compels a minority group to obey but does not make binding on itself." Unjust laws degrade human personality and are applied unequally. Therefore, one has a moral responsibility to disobey unjust laws openly, lovingly, and willingly accepting the penalty — demonstrating respect for the rule of law while resisting its unjust application.</details>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-left">Enrichuth · Decorate &amp; make it yours ✦</div>
+    <div class="footer-right">AP GOV · SCOTUS + DOCUMENTS · RESOURCE 2</div>
+  </div>
+</div>
+
+<script>
+const btn = document.getElementById('themeBtn');
+let theme = (() => { try { return localStorage.getItem('apgov-charts-theme') || 'system'; } catch { return 'system'; } })();
+function applyTheme(t) {
+  document.documentElement.removeAttribute('data-theme');
+  if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+  if (t === 'light') document.documentElement.setAttribute('data-theme', 'light');
+  btn.textContent = t === 'dark' ? '☀' : t === 'light' ? '◑' : '☾';
+}
+applyTheme(theme);
+btn.addEventListener('click', () => {
+  theme = theme === 'system' ? 'dark' : theme === 'dark' ? 'light' : 'system';
+  try { localStorage.setItem('apgov-charts-theme', theme); } catch {}
+  applyTheme(theme);
+});
+</script>
+
+</body></html>
